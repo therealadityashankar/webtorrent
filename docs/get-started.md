@@ -106,8 +106,6 @@ client.add(magnetURI, { path: '/path/to/folder' }, function (torrent) {
 
 ### Creating a new torrent and seed it (in Node.js)
 
-**Note:** Seeding a torrent to be compatible with the browser (i.e. with support for WebRTC) requires [webtorrent-hybrid](https://github.com/webtorrent/webtorrent-hybrid) (note this requires Node version 12, 13 to work, Node v14 will NOT work with this module, lower node versions may also be supported)
-
 ```js
 var WebTorrent = require('webtorrent-hybrid')
 var client = new WebTorrent()
